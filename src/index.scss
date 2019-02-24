@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+$col1: black;
+$gridpadding: 20px;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+html{
+  overflow-x: hidden;
+
+}
+
+[class^="wp-block-embed-"]{
+
+  display: inline;
+  iframe{
+    width: 100%;
+  }
+}
+
+
+.has-drop-cap{
+  &::first-letter {
+  font-size: 200%;
+}
+}
+[class^="wp-block-"]{
+  max-width: 100%;
+  margin-bottom: 20px;
+  display: inline
+}
+.wp-block-image{
+  img{
+    max-width: 100%;
+  }
+}
+.wp-block-video{
+  margin-bottom: 0px;
+  video {
+    width: 100%!important
+  }
+}
+.wp-block-file{
+  a{
+    display: block;
+  }
+}
+.wp-block-cover{
+  width: 100%;
+  min-height: 330px;
+  background-color: #000;
+  position: relative;
+  background-size: cover;
+  display: inline-block;
+  padding-top: 135px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .wp-block-cover-text{
+    margin-left: 20px;
+    font-weight: 200;
+    color: white;
+    z-index: 2;
+    font-size: 3em;
+    line-height: 1.25;
+    margin-bottom: 0;
+    max-width: 610px;
+    padding: 14px;
+    text-align: center;
+    position: absolute;
+  }
+}
+.has-pale-pink-background-color.has-pale-pink-background-color {
+    background-color: #f78da7;
+}
+.has-vivid-red-background-color.has-vivid-red-background-color {
+    background-color: #cf2e2e;
+}
+.has-luminous-vivid-orange-background-color.has-luminous-vivid-orange-background-color {
+    background-color: #ff6900;
+}
+.has-luminous-vivid-amber-background-color.has-luminous-vivid-amber-background-color {
+    background-color: #fcb900;
+}
+.has-light-green-cyan-background-color.has-light-green-cyan-background-color {
+    background-color: #7bdcb5;
+}
+.has-vivid-green-cyan-background-color.has-vivid-green-cyan-background-color {
+    background-color: #00d084;
+}
+.has-pale-cyan-blue-background-color.has-pale-cyan-blue-background-color {
+    background-color: #8ed1fc;
+}
+.has-very-light-gray-background-color.has-very-light-gray-background-color {
+    background-color: #eee;
+}
+.has-cyan-bluish-gray-background-color.has-cyan-bluish-gray-background-color {
+    background-color: #abb8c3;
+}
+.has-very-dark-gray-background-color.has-very-dark-gray-background-color {
+    background-color: #313131;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-10::before, .wp-block-cover.has-background-dim.has-background-dim-10::before {
+    opacity: .1;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-20::before, .wp-block-cover.has-background-dim.has-background-dim-20::before {
+    opacity: .2;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-30::before, .wp-block-cover.has-background-dim.has-background-dim-30::before {
+    opacity: .3;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-340::before, .wp-block-cover.has-background-dim.has-background-dim-40::before {
+    opacity: .3;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-50::before, .wp-block-cover.has-background-dim.has-background-dim-50::before {
+    opacity: .5;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-60::before, .wp-block-cover.has-background-dim.has-background-dim-60::before {
+    opacity: .6;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-70::before, .wp-block-cover.has-background-dim.has-background-dim-70::before {
+    opacity: .7;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-80::before, .wp-block-cover.has-background-dim.has-background-dim-80::before {
+    opacity: .8;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-90::before, .wp-block-cover.has-background-dim.has-background-dim-90::before {
+    opacity: .9;
+}
+.wp-block-cover-image.has-background-dim.has-background-dim-100::before, .wp-block-cover.has-background-dim.has-background-dim-100::before {
+    opacity: 1;
+}
+
+.wp-block-cover-image.has-background-dim::before, .wp-block-cover.has-background-dim::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: inherit;
+    opacity: .5;
+}
+ul.wp-block-gallery{
+  list-style: none;
+  position: relative;
+  padding-inline-start: 0px;
+  &.columns-3{
+    .blocks-gallery-item{
+      display: inline;
+      float: left;
+      width: 33.33%;
+      &:last-child{
+        width: 100%;
+      }
+    }
+  }
+  &.columns-2{
+    .blocks-gallery-item{
+      display: inline;
+      float: left;
+      width: 50%;
+      &:last-child{
+        width: 100%;
+      }
+    }
+  }
+  .blocks-gallery-item{
+    display: inline;
+    float: left;
+    img{
+      width: 100%
+    }
+  }
+}
+.wp-block-columns{
+  display: inline-block;
+  width: 100%;
+  &.has-2-columns{
+    .wp-block-column{
+      width: 50%;
+    }
+  }
+  &.has-3-columns{
+    .wp-block-column{
+      width: 33.33%;
+    }
+  }
+  &.has-4-columns{
+    .wp-block-column{
+      width: 25%;
+    }
+  }
+  &.has-5-columns{
+    .wp-block-column{
+      width: 20%;
+    }
+  }
+  &.has-6-columns{
+    .wp-block-column{
+      width: 16.66%;
+    }
+  }
+  .wp-block-column{
+    float: left;
+    padding-right: 5px
+  }
+}
+.alignleft {
+  width: calc(50% - 2.5px);
+  float: left
+}
+.aligncenter {
+  width: 100%
+}
+.alignright{
+  float: right;
+  width: calc(50% - 2.5px);
+}
+
+
+@media only screen and (max-width: 700px) {
+  .wp-block-columns{
+    &.has-3-columns{
+      .wp-block-column{
+        width: 50%;
+      }
+    }
+    &.has-4-columns{
+      .wp-block-column{
+        width: 50%;
+      }
+    }
+    &.has-5-columns{
+      .wp-block-column{
+        width: 50%;
+      }
+    }
+    &.has-6-columns{
+      .wp-block-column{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wp-block-columns{
+    &.has-2-columns{
+      .wp-block-column{
+        width: 100%;
+      }
+    }
+    &.has-3-columns{
+      .wp-block-column{
+        width: 100%;
+      }
+    }
+    &.has-4-columns{
+      .wp-block-column{
+        width: 100%;
+      }
+    }
+    &.has-5-columns{
+      .wp-block-column{
+        width: 100%;
+      }
+    }
+    &.has-6-columns{
+      .wp-block-column{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+button[class^="MuiButton-sizeLarge-"]{
+  border-radius: 0px!important
+}
+.headerMenu, .footerMenu{
+  a:focus, a:hover {
+    outline: 0px white;
+    outline-offset: 0px;
+  color: $col1;
+  text-decoration: none;
+}
+}
+.fade-appear{
+  opacity: 0
+}
+.fade-appear.fade-appear-active{
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-enter {
+  opacity: 0.01;
+}
+.fade-enter-done {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+body {
+  .menu {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    li {
+      display: inline;
+      padding: 0px;
+      margin: 0px;
+      a {
+        text-decoration: none;
+        color: $col1;
+        cursor: pointer;
+      }
+    }
+    &.mobile {
+      width: 40px;
+      height: 40px;
+      background-color: $col1;
+      padding: 10px;
+      position: relative;
+      overflow: hidden;
+      div {
+        width: 100%;
+        height: 2.5px;
+        background-color: white;
+        margin-bottom: 5px;
+        &:nth-child(2) {
+          height: 3.5px;
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+      &:hover {
+        div {
+          animation: menuhover 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+          &:nth-child(2) {
+            animation-delay: 0.1s;
+          }
+          &:last-child {
+            animation-delay: 0.2s;
+          }
+        }
+      }
+
+    }
+  }
+  .header {
+    .menu {
+      float: right;
+      li {
+        padding-left: 20px;
+        text-transform: uppercase;
+        font-weight: 600
+      }
+    }
+  }
+  .mainfeed {
+    .postformat-video {
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .format-gallery {
+      .wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+        div {
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 400px;
+          position: absolute;
+          background-size: cover;
+          animation: slide 20s infinite;
+          z-index: 10;
+          opacity: 1
+        }
+      }
+    }
+    .format-image {
+      .imgwrapper{
+        height: auto;
+        width: 100%;
+        top: 0px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .format-standard {
+      color: white;
+      .text {
+        position: relative;
+        z-index: 20;
+        margin-top: 140px;
+        padding: 20px;
+        transform: translateY(0px);
+        transition: transform 0.3s ease-out
+      }
+      .imgwrapper{
+        height: 300px;
+        width: 100%;
+        top: 0px;
+        position: absolute;
+        overflow: hidden;
+        img {
+          width: calc(100% + 80px);
+          top: -20px;
+          left: -40px;
+          position: absolute;
+          filter: blur(24px) brightness(50%);
+          transition: filter 0.3s ease-out
+        }
+      }
+      &:hover {
+        .text {
+          transform: translateY(400px);
+        }
+        .imgwrapper {
+          img {
+            filter: blur(0px) brightness(100%)
+          }
+        }
+      }
+    }
+  }
+  .post {
+
+  }
+  .footer {
+    padding: 50px 15px;
+    .menu {
+      li {
+        padding-right: 20px
+      }
+    }
+  }
+}
+.cookieBanner {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 300;
+  background-color: $col1;
+  color: white;
+  padding: 10px 20%;
+  button{
+    color: black;
+    display: inline;
+  }
+
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
+}
+@keyframes menuhover {
+  0% {
+    transform: translateX(0px);
+  } 50% {
+    transform: translateX(-100%);
+  } 100% {
+    transform: translateX(0px);
+  }
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+    z-index: 10;
+    opacity: 1
+  } 9% {
+    transform: translateX(-100%);
+    z-index: 10;
+    opacity: 1
+  } 49% {
+    transform: translateX(-100%);
+    z-index: 10;
+    opacity: 1
+  } 50% {
+    transform: translateX(0px);
+    z-index: 0;
+    opacity: 0
+  } 60% {
+    transform: translateX(0px);
+    z-index: 0;
+    opacity: 1
+  } 61% {
+    transform: translateX(0px);
+    z-index: 10;
+    opacity: 1
+  } 100% {
+    transform: translateX(0px);
+    z-index: 10;
+    opacity: 1
+  }
+}
